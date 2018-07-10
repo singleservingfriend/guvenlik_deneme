@@ -81,7 +81,7 @@ def Mail_Yolla():
     msg = MIMEMultipart()
     msg['From'] = fromaddr
     msg['To'] = toaddr
-    msg['Subject'] = "self-made-man Güvenlik Maili"
+    msg['Subject'] = "okkangal Güvenlik Maili"
     body = str(Giris_Log_Oku()[-1])+" "+"Tarihinde Bilgisayarınıza Giriş Yapıldı. " + Ag_Bilgi()
     msg.attach(MIMEText(body, 'plain'))
     filename = "deneme.jpg"
