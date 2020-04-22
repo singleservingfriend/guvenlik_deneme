@@ -28,7 +28,7 @@ def Giris_Log_Tut():
     im.execute("INSERT  INTO giriszaman (tarih,saat) VALUES ('"+TARIH+"','"+SAAT+"')")
     vt.commit()
 
-
+    im.execute("INSERT  INTO giriszaman (tarih,saat) VALUES ([@TARIH],[@SAAT])
 
 def Giris_Log_Oku():
     vt = sqlite3.connect("D:\\Databases\\girislog.db")
